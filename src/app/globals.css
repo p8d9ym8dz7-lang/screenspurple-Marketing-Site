@@ -30,3 +30,28 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes podcast-slide {
+  0%, 16% {
+    transform: translateX(0);
+  }
+  20%, 36% {
+    transform: translateX(calc(-100% - 1rem));
+  }
+  40%, 56% {
+    transform: translateX(calc(-200% - 2rem));
+  }
+  60%, 76% {
+    transform: translateX(calc(-300% - 3rem));
+  }
+  80%, 96% {
+    transform: translateX(calc(-400% - 4rem));
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.podcast-slide-track {
+  animation: podcast-slide 24s infinite;
+}

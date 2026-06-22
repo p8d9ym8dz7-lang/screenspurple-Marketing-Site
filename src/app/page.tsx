@@ -3,11 +3,11 @@ export default function HomePage() {
     <main className="text-white">
 
       {/* NAVBAR */}
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-teal-950/70 border-b border-teal-700">
+      <header className="sticky top-0 z-50 backdrop-blur-md bg-purple-950/70 border-b border-purple-700">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <div>
             <h1 className="text-2xl font-bold tracking-wider">
-              SCREENSSTUDIOS
+              Screens Purple
             </h1>
           </div>
 
@@ -20,7 +20,7 @@ export default function HomePage() {
 
           <a
             href="/book"
-            className="rounded-xl bg-orange-500 px-5 py-3 font-semibold"
+            className="rounded-xl bg-purple-600 px-5 py-3 font-semibold"
           >
             Book Consultation
           </a>
@@ -28,72 +28,103 @@ export default function HomePage() {
       </header>
 
       {/* HERO */}
-      <section className="relative flex min-h-screen items-center">
-        <div className="mx-auto max-w-7xl px-6">
+      <section className="relative min-h-screen overflow-hidden px-6 py-20">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(168,85,247,0.35),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(88,28,135,0.55),transparent_40%)]" />
 
-          <div className="max-w-4xl">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
 
-            <div className="mb-6 inline-flex rounded-full border border-orange-400 bg-teal-950/30 px-4 py-2 text-sm">
-              Premium Podcast Production • Digital Marketing • Film Marketing
+          {/* LEFT: PODCAST IMAGE SLIDER */}
+          <div className="overflow-hidden rounded-[36px] border border-purple-500/30 bg-purple-950/30 p-4 shadow-[0_0_80px_rgba(168,85,247,0.28)]">
+            <div className="podcast-slide-track flex gap-4">
+              {[
+                "/podcast/studio-01.jpeg",
+                "/podcast/studio-02.jpeg",
+                "/podcast/studio-03.jpeg",
+                "/podcast/studio-04.jpeg",
+                "/podcast/studio-05.jpeg",
+              ].map((src) => (
+                <img
+                  key={src}
+                  src={src}
+                  alt="ScreensPurple Studio"
+                  className="h-[560px] min-w-full rounded-[28px] object-cover"
+                />
+              ))}
             </div>
 
-            <h1 className="mb-8 text-6xl font-bold leading-tight md:text-8xl">
-              Create.
-              <br />
-              Market.
-              <br />
-              Amplify.
+            <div className="mt-5 flex items-center justify-between px-2">
+              <div>
+                <div className="text-sm uppercase tracking-[0.3em] text-purple-300">
+                  ScreensPurple Studio
+                </div>
+                <div className="mt-1 text-2xl font-bold">
+                  Record in a premium creator space
+                </div>
+              </div>
+
+              <div className="rounded-full border border-purple-400/40 px-4 py-2 text-sm text-purple-200">
+                4K • Audio • Lights
+              </div>
+            </div>
+          </div>
+
+          {/* RIGHT: BOOKING PANEL */}
+          <div className="rounded-[36px] border border-purple-500/30 bg-black/35 p-8 backdrop-blur-xl shadow-[0_0_80px_rgba(168,85,247,0.22)]">
+            <div className="mb-6 inline-flex rounded-full border border-purple-400/40 bg-purple-950/40 px-4 py-2 text-sm text-purple-200">
+              Purple Podcast Studio
+            </div>
+
+            <h1 className="text-3xl font-black leading-tight md:text-4xl">
+              Book Your
+              <span className="block bg-gradient-to-r from-purple-200 via-fuchsia-300 to-white bg-clip-text text-transparent">
+                Podcast Session
+              </span>
             </h1>
 
-            <p className="mb-10 max-w-2xl text-xl text-teal-100">
-              India's Premium Content, Podcast & Film Marketing Studio.
-              Helping brands, creators, startups, celebrities and film
-              producers create content and campaigns that drive results.
+            <p className="mt-6 text-lg text-purple-100">
+              Professional podcast recording, 4K multi-camera production,
+              cinematic lighting, premium audio and creator-ready edits.
             </p>
 
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <a
-                href="/podcast"
-                className="rounded-xl bg-orange-500 px-8 py-4 text-center font-semibold"
-              >
-                Book Podcast Studio
-              </a>
+            <div className="mt-8 rounded-3xl border border-purple-500/20 bg-purple-950/30 p-5">
+              <div className="mb-4 flex items-center justify-between">
+                <div className="text-lg font-bold">June 2026</div>
+                <div className="text-sm text-purple-300">Available Slots</div>
+              </div>
 
-              <a
-                href="/book"
-                className="rounded-xl border border-orange-400 px-8 py-4 text-center"
-              >
-                Schedule Consultation
-              </a>
+              <div className="grid grid-cols-7 gap-2 text-center text-sm">
+                {["M","T","W","T","F","S","S"].map((day) => (
+                  <div key={day} className="text-purple-300">{day}</div>
+                ))}
+
+                {Array.from({ length: 30 }).map((_, i) => (
+                  <button
+                    key={i}
+                    className={`rounded-xl py-3 ${i === 21 ? "bg-purple-600 text-white" : "bg-white/5 text-purple-100"}`}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+              </div>
             </div>
 
-          </div>
+            <div className="mt-6 grid grid-cols-2 gap-3">
+              {["10:00 AM","11:30 AM","01:00 PM","03:00 PM","05:00 PM","07:00 PM"].map((slot) => (
+                <button
+                  key={slot}
+                  className="rounded-2xl border border-purple-500/30 bg-purple-950/30 px-4 py-3 text-purple-100 hover:bg-purple-600"
+                >
+                  {slot}
+                </button>
+              ))}
+            </div>
 
-        </div>
-      </section>
-
-      {/* STATS */}
-      <section className="py-20">
-        <div className="mx-auto grid max-w-7xl gap-8 px-6 md:grid-cols-4">
-
-          <div className="rounded-2xl border border-teal-700 bg-teal-950/20 p-8 text-center">
-            <div className="text-5xl font-bold">100+</div>
-            <div className="mt-2 text-teal-100">Projects</div>
-          </div>
-
-          <div className="rounded-2xl border border-teal-700 bg-teal-950/20 p-8 text-center">
-            <div className="text-5xl font-bold">50+</div>
-            <div className="mt-2 text-teal-100">Clients</div>
-          </div>
-
-          <div className="rounded-2xl border border-teal-700 bg-teal-950/20 p-8 text-center">
-            <div className="text-5xl font-bold">10M+</div>
-            <div className="mt-2 text-teal-100">Reach Generated</div>
-          </div>
-
-          <div className="rounded-2xl border border-teal-700 bg-teal-950/20 p-8 text-center">
-            <div className="text-5xl font-bold">5+</div>
-            <div className="mt-2 text-teal-100">Years Experience</div>
+            <a
+              href="/book"
+              className="mt-6 block rounded-2xl bg-purple-600 px-8 py-4 text-center text-lg font-bold hover:bg-purple-500"
+            >
+              Book Studio Session
+            </a>
           </div>
 
         </div>
@@ -111,13 +142,13 @@ export default function HomePage() {
 
             <a
               href="/podcast"
-              className="rounded-3xl border border-teal-700 bg-teal-950/20 p-10 transition hover:border-orange-400"
+              className="rounded-3xl border border-purple-700 bg-purple-950/20 p-10 transition hover:border-purple-500"
             >
               <h3 className="mb-4 text-3xl font-bold">
                 Podcast Studio
               </h3>
 
-              <p className="text-teal-100">
+              <p className="text-purple-200">
                 Professional podcast production with 4K video,
                 premium audio, editing, reels and thumbnails.
               </p>
@@ -125,13 +156,13 @@ export default function HomePage() {
 
             <a
               href="/digital-marketing"
-              className="rounded-3xl border border-teal-700 bg-teal-950/20 p-10 transition hover:border-orange-400"
+              className="rounded-3xl border border-purple-700 bg-purple-950/20 p-10 transition hover:border-purple-500"
             >
               <h3 className="mb-4 text-3xl font-bold">
                 Digital Marketing
               </h3>
 
-              <p className="text-teal-100">
+              <p className="text-purple-200">
                 Social media, performance marketing, branding,
                 influencer campaigns and lead generation.
               </p>
@@ -139,13 +170,13 @@ export default function HomePage() {
 
             <a
               href="/film-marketing"
-              className="rounded-3xl border border-teal-700 bg-teal-950/20 p-10 transition hover:border-orange-400"
+              className="rounded-3xl border border-purple-700 bg-purple-950/20 p-10 transition hover:border-purple-500"
             >
               <h3 className="mb-4 text-3xl font-bold">
                 Film Marketing
               </h3>
 
-              <p className="text-teal-100">
+              <p className="text-purple-200">
                 Film launches, PR, influencer campaigns,
                 OTT promotions and celebrity management.
               </p>
@@ -163,14 +194,14 @@ export default function HomePage() {
             Ready To Grow?
           </h2>
 
-          <p className="mb-10 text-xl text-teal-100">
+          <p className="mb-10 text-xl text-purple-200">
             Launch a podcast, scale your brand or market your film
             with ScreensStudios.
           </p>
 
           <a
             href="/book"
-            className="rounded-xl bg-orange-500 px-10 py-5 text-lg font-semibold"
+            className="rounded-xl bg-purple-600 px-10 py-5 text-lg font-semibold"
           >
             Get Started Today
           </a>
