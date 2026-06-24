@@ -12,10 +12,10 @@ export default function HomePage() {
           </div>
 
           <nav className="hidden gap-8 md:flex">
-            <a href="/podcast">Podcast</a>
-            <a href="/digital-marketing">Digital Marketing</a>
-            <a href="/film-marketing">Film Marketing</a>
-            <a href="/case-studies">Case Studies</a>
+            <a href="/podcast/index.html">Podcast</a>
+            <a href="/digital-marketing/index.html">Digital Marketing</a>
+            <a href="/film-marketing/index.html">Film Marketing</a>
+            <a href="/case-studies/index.html">Case Studies</a>
           </nav>
 
           <a
@@ -150,7 +150,7 @@ export default function HomePage() {
           <div className="grid gap-8 lg:grid-cols-3">
 
             <a
-              href="/podcast"
+              href="/podcast/index.html"
               className="rounded-3xl border border-purple-700 bg-purple-950/20 p-10 transition hover:border-purple-500"
             >
               <h3 className="mb-4 text-3xl font-bold">
@@ -164,7 +164,7 @@ export default function HomePage() {
             </a>
 
             <a
-              href="/digital-marketing"
+              href="/digital-marketing/index.html"
               className="rounded-3xl border border-purple-700 bg-purple-950/20 p-10 transition hover:border-purple-500"
             >
               <h3 className="mb-4 text-3xl font-bold">
@@ -178,7 +178,7 @@ export default function HomePage() {
             </a>
 
             <a
-              href="/film-marketing"
+              href="/film-marketing/index.html"
               className="rounded-3xl border border-purple-700 bg-purple-950/20 p-10 transition hover:border-purple-500"
             >
               <h3 className="mb-4 text-3xl font-bold">
