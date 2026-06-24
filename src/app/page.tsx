@@ -116,15 +116,21 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="mt-6 grid grid-cols-2 gap-3">
-              {["10:00 AM","11:30 AM","01:00 PM","03:00 PM","05:00 PM","07:00 PM"].map((slot) => (
-                <button
-                  key={slot}
-                  className="rounded-2xl border border-purple-500/30 bg-purple-950/30 px-4 py-3 text-purple-100 hover:bg-purple-600"
-                >
-                  {slot}
-                </button>
-              ))}
+            <div className="mt-6">
+              <label className="mb-2 block text-sm font-medium text-purple-200">
+                Select Session Time
+              </label>
+
+              <select className="w-full rounded-2xl border border-purple-500/30 bg-purple-950/30 px-4 py-4 text-purple-100 outline-none">
+                <option>12:00 AM - 03:00 AM</option>
+                <option>03:00 AM - 06:00 AM</option>
+                <option>06:00 AM - 09:00 AM</option>
+                <option>09:00 AM - 12:00 PM</option>
+                <option>12:00 PM - 03:00 PM</option>
+                <option>03:00 PM - 06:00 PM</option>
+                <option>06:00 PM - 09:00 PM</option>
+                <option>09:00 PM - 12:00 AM</option>
+              </select>
             </div>
 
             <a
