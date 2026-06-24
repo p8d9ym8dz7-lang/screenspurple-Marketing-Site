@@ -12,6 +12,7 @@ export default function HomePage() {
           </div>
 
           <nav className="hidden gap-8 md:flex">
+            <a href="/index.html">Home</a>
             <a href="/podcast/index.html">Podcast</a>
             <a href="/digital-marketing/index.html">Digital Marketing</a>
             <a href="/film-marketing/index.html">Film Marketing</a>
