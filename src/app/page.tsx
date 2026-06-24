@@ -34,6 +34,11 @@ export default function HomePage() {
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
 
           {/* LEFT: PODCAST IMAGE SLIDER */}
+
+          <h2 className="mb-6 text-2xl font-semibold leading-snug text-purple-100 md:text-3xl">
+            A premium podcast studio in a prime location, powered by expert technicians and the latest technology.
+          </h2>
+
           <div className="overflow-hidden rounded-[36px] border border-purple-500/30 bg-purple-950/30 p-4 shadow-[0_0_80px_rgba(168,85,247,0.28)]">
             <div className="podcast-slide-track flex gap-4">
               {[
