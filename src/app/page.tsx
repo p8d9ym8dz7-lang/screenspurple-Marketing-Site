@@ -4,9 +4,9 @@ export default function HomePage() {
 
       {/* NAVBAR */}
       <header className="sticky top-0 z-50 backdrop-blur-md bg-purple-950/70 border-b border-purple-700">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
           <div>
-            <h1 className="text-2xl font-bold tracking-wider">
+            <h1 className="text-xl font-bold tracking-wider">
               Screens Purple
             </h1>
           </div>
@@ -20,7 +20,7 @@ export default function HomePage() {
 
           <a
             href="/book"
-            className="rounded-xl bg-purple-600 px-5 py-3 font-semibold"
+            className="rounded-xl bg-purple-600 px-5 py-2 font-semibold"
           >
             Book Consultation
           </a>
@@ -64,10 +64,8 @@ export default function HomePage() {
                   ScreensPurple Studio
                 </div>
                 <div className="mt-1 text-sm leading-6 text-purple-100">
-                  <div className="font-semibold">Screenplayers</div>
-                  <div>Mezzanine Floor, Fun Republic, Cinepolis</div>
-                  <div>Fun Republic Road,</div>
-                  <div>Andheri West, Mumbai – 400053</div>
+                  <div>Mezzanine Floor, Fun Republic, Cinepolis, Fun Republic Road, Andheri West, Mumbai – 400053</div>
+                  <div>Phone: +91 9004069833</div>
                 </div>
               </div>
 
@@ -119,14 +117,14 @@ export default function HomePage() {
               </label>
 
               <select className="w-full rounded-2xl border border-purple-500/30 bg-purple-950/30 px-4 py-4 text-purple-100 outline-none">
-                <option>12:00 AM - 03:00 AM</option>
-                <option>03:00 AM - 06:00 AM</option>
-                <option>06:00 AM - 09:00 AM</option>
                 <option>09:00 AM - 12:00 PM</option>
                 <option>12:00 PM - 03:00 PM</option>
                 <option>03:00 PM - 06:00 PM</option>
                 <option>06:00 PM - 09:00 PM</option>
                 <option>09:00 PM - 12:00 AM</option>
+                <option>12:00 AM - 03:00 AM</option>
+                <option>03:00 AM - 06:00 AM</option>
+                <option>06:00 AM - 09:00 AM</option>
               </select>
             </div>
 
