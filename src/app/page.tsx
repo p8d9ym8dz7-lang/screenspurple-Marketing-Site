@@ -58,19 +58,19 @@ export default function HomePage() {
               ))}
             </div>
 
-            <div className="mt-5 flex items-center justify-between px-2">
-              <div>
+            <div className="mt-5 px-2">
+              <div className="flex items-center justify-between">
                 <div className="text-sm uppercase tracking-[0.3em] text-purple-300">
                   ScreensPurple Studio
                 </div>
-                <div className="mt-1 text-sm leading-6 text-purple-100">
-                  <div>Mezzanine Floor, Fun Republic, Cinepolis, Fun Republic Road, Andheri West, Mumbai – 400053</div>
-                  <div>Phone: +91 9004069833</div>
+
+                <div className="rounded-full border border-purple-400/40 px-4 py-2 text-sm text-purple-200">
+                  4K • Audio • Lights
                 </div>
               </div>
 
-              <div className="rounded-full border border-purple-400/40 px-4 py-2 text-sm text-purple-200">
-                4K • Audio • Lights
+              <div className="mt-2 text-sm text-purple-100">
+                Mezzanine Floor, Fun Republic, Cinepolis, Fun Republic Road, Andheri West, Mumbai – 400053 • Phone: +91 9004069833
               </div>
             </div>
           </div>
