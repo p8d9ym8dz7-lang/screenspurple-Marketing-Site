@@ -35,11 +35,12 @@ export default function HomePage() {
 
           {/* LEFT: PODCAST IMAGE SLIDER */}
 
-          <h2 className="mb-6 text-2xl font-semibold leading-snug text-purple-100 md:text-3xl">
-            A premium podcast studio in a prime location, powered by expert technicians and the latest technology.
-          </h2>
+          <div>
+            <h2 className="mb-6 text-2xl font-semibold leading-snug text-purple-100 md:text-3xl">
+              A premium podcast studio in a prime location, powered by expert technicians and the latest technology.
+            </h2>
 
-          <div className="overflow-hidden rounded-[36px] border border-purple-500/30 bg-purple-950/30 p-4 shadow-[0_0_80px_rgba(168,85,247,0.28)]">
+            <div className="overflow-hidden rounded-[36px] border border-purple-500/30 bg-purple-950/30 p-4 shadow-[0_0_80px_rgba(168,85,247,0.28)]">
             <div className="podcast-slide-track flex gap-4">
               {[
                 "/podcast/studio-01.jpeg",
@@ -71,6 +72,8 @@ export default function HomePage() {
                 4K • Audio • Lights
               </div>
             </div>
+          </div>
+
           </div>
 
           {/* RIGHT: BOOKING PANEL */}
