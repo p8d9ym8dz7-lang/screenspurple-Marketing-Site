@@ -97,7 +97,7 @@ export default function FilmMarketingPage() {
       <section className="border-t border-teal-800 py-24">
         <div className="mx-auto max-w-6xl px-6">
           <h2 className="mb-12 text-center text-4xl font-bold">
-            Why Choose ScreensStudios
+            Why Choose ScreensPurple
           </h2>
 
           <div className="grid gap-6 md:grid-cols-2">

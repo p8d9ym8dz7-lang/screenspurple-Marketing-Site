@@ -1,4 +1,4 @@
-name: Deploy ScreensStudios
+name: Deploy ScreensPurple
 
 on:
   push:
@@ -11,6 +11,10 @@ jobs:
 
     permissions:
       contents: read
+
+    env:
+      DEPLOY_BUCKET: ${{ secrets.DEPLOY_BUCKET }}
+      CLOUDFRONT_DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
 
     steps:
       - name: Checkout
@@ -36,10 +40,10 @@ jobs:
 
       - name: Upload Site
         run: |
-          aws s3 sync out/ s3://screensstudios-web-prod --delete
+          aws s3 sync out/ s3://${DEPLOY_BUCKET} --delete
 
       - name: Invalidate CloudFront
         run: |
           aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --distribution-id ${CLOUDFRONT_DISTRIBUTION_ID} \
             --paths "/*"

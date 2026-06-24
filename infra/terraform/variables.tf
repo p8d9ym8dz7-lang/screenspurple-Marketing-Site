@@ -3,7 +3,7 @@ variable "aws_region" {
 }
 
 variable "domain_name" {
-  default = "screensstudios.com"
+  default = "screenspurple.com"
 }
 
 variable "bucket_name" {

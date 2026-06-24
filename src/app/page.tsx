@@ -196,7 +196,7 @@ export default function HomePage() {
 
           <p className="mb-10 text-xl text-purple-200">
             Launch a podcast, scale your brand or market your film
-            with ScreensStudios.
+            with ScreensPurple.
           </p>
 
           <a
