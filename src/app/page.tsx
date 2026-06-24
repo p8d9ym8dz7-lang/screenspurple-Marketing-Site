@@ -28,7 +28,7 @@ export default function HomePage() {
       </header>
 
       {/* HERO */}
-      <section className="relative min-h-screen overflow-hidden px-6 py-20">
+      <section className="relative min-h-screen overflow-hidden px-6 py-8">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(168,85,247,0.35),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(88,28,135,0.55),transparent_40%)]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
@@ -36,7 +36,7 @@ export default function HomePage() {
           {/* LEFT: PODCAST IMAGE SLIDER */}
 
           <div>
-            <h2 className="mb-6 text-2xl font-semibold leading-snug text-purple-100 md:text-3xl">
+            <h2 className="mb-4 text-lg font-medium leading-snug text-purple-100 md:text-xl">
               A premium podcast studio in a prime location, powered by expert technicians and the latest technology.
             </h2>
 
@@ -63,8 +63,11 @@ export default function HomePage() {
                 <div className="text-sm uppercase tracking-[0.3em] text-purple-300">
                   ScreensPurple Studio
                 </div>
-                <div className="mt-1 text-2xl font-bold">
-                  Record in a premium creator space
+                <div className="mt-1 text-sm leading-6 text-purple-100">
+                  <div className="font-semibold">Screenplayers</div>
+                  <div>Mezzanine Floor, Fun Republic, Cinepolis</div>
+                  <div>Fun Republic Road,</div>
+                  <div>Andheri West, Mumbai – 400053</div>
                 </div>
               </div>
 
@@ -82,10 +85,9 @@ export default function HomePage() {
               Purple Podcast Studio
             </div>
 
-            <h1 className="text-3xl font-black leading-tight md:text-4xl">
-              Book Your
-              <span className="block bg-gradient-to-r from-purple-200 via-fuchsia-300 to-white bg-clip-text text-transparent">
-                Podcast Session
+            <h1 className="text-xl font-bold leading-tight md:text-2xl">
+              <span className="bg-gradient-to-r from-purple-200 via-fuchsia-300 to-white bg-clip-text text-transparent">
+                Book Your Podcast Session
               </span>
             </h1>
 
