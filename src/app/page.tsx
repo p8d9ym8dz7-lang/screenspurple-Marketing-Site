@@ -89,11 +89,6 @@ export default function HomePage() {
               </span>
             </h1>
 
-            <p className="mt-6 text-lg text-purple-100">
-              Professional podcast recording, 4K multi-camera production,
-              cinematic lighting, premium audio and creator-ready edits.
-            </p>
-
             <div className="mt-8 rounded-3xl border border-purple-500/20 bg-purple-950/30 p-5">
               <div className="mb-4 flex items-center justify-between">
                 <div className="text-lg font-bold">June 2026</div>
