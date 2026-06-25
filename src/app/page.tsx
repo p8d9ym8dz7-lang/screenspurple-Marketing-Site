@@ -16,6 +16,7 @@ export default function HomePage() {
             <a href="/podcast/index.html">Podcast</a>
             <a href="/digital-marketing/index.html">Digital Marketing</a>
             <a href="/film-marketing/index.html">Film Marketing</a>
+            <a href="/purple-talent/index.html">Purple Talent</a>
             <a href="/case-studies/index.html">Case Studies</a>
           </nav>
 
